@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>Chat</title>
+</head>
+<body class="bg-dark">
+    <div class="container bg-light shadow">
+        <div class="row bg-info text-light"><h1 class="mx-auto">Chat</h1></div>
+        <div class="row"><div class='bg-light' id='conversacion'></div></div>
+        <div class="row">
+            <input class="form-control" type="text" id="mensaje" placeholder="mensaje" class="">
+            <button class="btn btn-outline-info" onclick="EnviarMensaje()"><strong>Enviar</strong></button>
+            
+        </div> 
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='chat.js'></script>
+
+</body>
+</html>
